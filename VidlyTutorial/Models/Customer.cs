@@ -1,21 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using VidlyTutorial.Models;
 
-namespace VidlyTutorial.Models
+namespace VidlyTutorial.ViewModels
 {
     public class Customer
     {
-        public int Id { get; set; }
+
+        public int id { get; set; }
+
         public string name { get; set; }
-    }
 
-    public class RandomMovieViewModel
-    {
+        public bool IsSubscribedToNewsletter { get; set; }
 
-        public Movie movie { get; set; }
+        public MembershipType MembershipType { get; set; }
 
-        public List<Customer> customer { get; set; }
+        public byte MembershipTypeID { get; set; }
     }
 }
